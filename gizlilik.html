@@ -1,116 +1,205 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gizlilik Politikası — LGS Cards & YKS Cards</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — LGS Cepte</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f9fa; color: #1a1d2e; line-height: 1.7; }
-  .header { background: linear-gradient(135deg, #4B7BE8, #8B5CF6); color: white; padding: 48px 24px; text-align: center; }
-  .header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
-  .header p { font-size: 15px; opacity: 0.85; }
-  .badges { display: flex; gap: 12px; justify-content: center; margin-top: 16px; flex-wrap: wrap; }
-  .badge { background: rgba(255,255,255,0.2); border-radius: 20px; padding: 6px 14px; font-size: 13px; font-weight: 600; }
-  .container { max-width: 720px; margin: 0 auto; padding: 40px 24px; }
-  .section { background: white; border-radius: 16px; padding: 28px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
-  h2 { font-size: 18px; font-weight: 700; color: #4B7BE8; margin-bottom: 14px; border-bottom: 2px solid #EEF2FF; padding-bottom: 10px; }
-  p { margin-bottom: 12px; font-size: 15px; color: #374151; }
-  ul { padding-left: 20px; margin-bottom: 12px; }
-  li { font-size: 15px; color: #374151; margin-bottom: 6px; }
-  .highlight { background: #EEF2FF; border-left: 4px solid #4B7BE8; border-radius: 8px; padding: 14px 18px; margin-bottom: 12px; font-size: 15px; }
-  .contact { background: linear-gradient(135deg, #4B7BE8, #8B5CF6); color: white; border-radius: 16px; padding: 28px; text-align: center; margin-bottom: 20px; }
-  .contact h2 { color: white; border-color: rgba(255,255,255,0.3); }
-  .contact p { color: rgba(255,255,255,0.9); }
-  .contact a { color: white; font-weight: 700; }
-  .footer { text-align: center; font-size: 13px; color: #9CA3AF; padding: 20px 0 40px; }
-  .date { font-size: 13px; color: #9CA3AF; margin-bottom: 4px; }
+  :root {
+    --kagit: #F4EFE1;
+    --yuzey: #FFFDF7;
+    --cizgi: #D9CFB2;
+    --murekkep: #211D16;
+    --soluk: #7A705C;
+    --kirmizi: #B23A2E;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--kagit);
+    color: var(--murekkep);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    font-size: 16px;
+  }
+  .sarmal { max-width: 720px; margin: 0 auto; padding: 40px 22px 80px; }
+  header {
+    border-bottom: 2px solid var(--murekkep);
+    padding-bottom: 18px;
+    margin-bottom: 32px;
+  }
+  .marka {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--kirmizi);
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+  h1 { font-size: 30px; margin: 0 0 6px; font-weight: 700; letter-spacing: -0.5px; }
+  .tarih { color: var(--soluk); font-size: 13px; margin: 0; }
+  h2 {
+    font-size: 19px;
+    margin: 36px 0 10px;
+    padding-left: 12px;
+    border-left: 3px solid var(--kirmizi);
+  }
+  p, li { color: #332E24; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  .kutu {
+    background: var(--yuzey);
+    border: 1px solid var(--cizgi);
+    padding: 16px 18px;
+    margin: 18px 0;
+  }
+  .kutu strong { display: block; margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 15px; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--cizgi); vertical-align: top; }
+  th { font-size: 12px; letter-spacing: 1px; color: var(--soluk); text-transform: uppercase; font-weight: 700; }
+  a { color: var(--kirmizi); }
+  footer {
+    margin-top: 48px;
+    padding-top: 18px;
+    border-top: 1px solid var(--cizgi);
+    color: var(--soluk);
+    font-size: 13px;
+  }
 </style>
 </head>
 <body>
+<div class="sarmal">
 
-<div class="header">
+<header>
+  <p class="marka">LGS CEPTE</p>
   <h1>Gizlilik Politikası</h1>
-  <p>Privacy Policy</p>
-  <div class="badges">
-    <span class="badge">LGS Cards</span>
-    <span class="badge">YKS Cards</span>
-  </div>
-  <p style="margin-top:14px; font-size:13px; opacity:0.7;">Son güncelleme: Ağustos 2026</p>
+  <p class="tarih">Son güncelleme: 9 Ağustos 2026</p>
+</header>
+
+<p>
+  Bu politika, <strong>LGS Cepte</strong> mobil uygulamasının hangi verileri topladığını,
+  bunları neden ve nasıl kullandığını açıklar. Uygulama ortaokul öğrencilerinin LGS
+  hazırlığı için tasarlanmıştır ve veri toplamayı mümkün olan en az düzeyde tutar.
+</p>
+
+<h2>Kısaca</h2>
+<div class="kutu">
+  <strong>Hesap açmak zorunlu değildir.</strong>
+  Uygulamayı hesap açmadan kullanırsan hiçbir veri cihazından dışarı çıkmaz; her şey
+  yalnızca telefonunda saklanır. Yedekleme özelliğini kullanmak istersen e-posta adresinle
+  hesap açman gerekir; ancak o zaman çalışma verilerin sunucuya kaydedilir.
 </div>
 
-<div class="container">
+<h2>Toplanan veriler</h2>
+<table>
+  <thead>
+    <tr><th>Veri</th><th>Ne zaman</th><th>Amaç</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E-posta adresi</td>
+      <td>Yalnızca hesap açarsan</td>
+      <td>Girişi doğrulamak, şifre sıfırlama bağlantısı göndermek</td>
+    </tr>
+    <tr>
+      <td>Çalışma ilerlemesi<br><span style="color:var(--soluk);font-size:14px">(kart durumları, puan, gün serisi, deneme sonuçları)</span></td>
+      <td>Yalnızca "Buluta Yedekle" dediğinde</td>
+      <td>İlerlemenin başka cihazda geri yüklenebilmesi</td>
+    </tr>
+    <tr>
+      <td>Hedef bilgileri<br><span style="color:var(--soluk);font-size:14px">(hedef okul, net hedefi, zayıf dersler)</span></td>
+      <td>Yalnızca hesap açıp yedeklersen</td>
+      <td>Ayarların yeni cihazda geri gelmesi</td>
+    </tr>
+  </tbody>
+</table>
 
-  <div class="section">
-    <div class="highlight">
-      Bu uygulamalar kullanıcılardan hiçbir kişisel veri toplamaz. Tüm veriler yalnızca cihazınızda saklanır.
-    </div>
-    <h2>Genel Bakış</h2>
-    <p>LGS Cards ve YKS Cards uygulamaları ("uygulamalar"), Enese Gurmmenes tarafından geliştirilmiştir. Bu gizlilik politikası, uygulamalarımızın hangi bilgileri topladığını ve nasıl kullandığını açıklamaktadır.</p>
-    <p>Uygulamalarımız tamamen çevrimdışı çalışır ve herhangi bir sunucuya veri göndermez.</p>
-  </div>
+<h2>Toplanmayan veriler</h2>
+<ul>
+  <li>Ad, soyad, doğum tarihi, telefon numarası veya adres</li>
+  <li>Konum bilgisi</li>
+  <li>Rehber, fotoğraf, dosya veya cihazdaki diğer içerikler</li>
+  <li>Reklam kimliği veya izleme çerezleri</li>
+</ul>
+<p>
+  Uygulamada <strong>reklam gösterilmez</strong> ve veriler hiçbir üçüncü tarafa
+  satılmaz, kiralanmaz veya pazarlama amacıyla paylaşılmaz.
+</p>
 
-  <div class="section">
-    <h2>Toplanan Veriler</h2>
-    <p><strong>Kişisel veri toplanmaz.</strong> Uygulamalar aşağıdaki bilgileri yalnızca cihazınızda saklar:</p>
-    <ul>
-      <li>Çalışma ilerlemesi (hangi kartların öğrenildiği)</li>
-      <li>Günlük çalışma serisi ve XP puanları</li>
-      <li>Kullanıcı tercihleri (hedef ders, çalışma süresi)</li>
-      <li>Bildirim tercihleri</li>
-    </ul>
-    <p>Bu veriler cihazınızda (AsyncStorage) saklanır ve dışarıya aktarılmaz.</p>
-  </div>
+<h2>Veriler nerede saklanıyor</h2>
+<p>
+  Hesap ve yedekleme verileri <strong>Supabase</strong> altyapısında,
+  <strong>Frankfurt (Almanya, Avrupa Birliği)</strong> bölgesindeki sunucularda tutulur.
+  Aktarım sırasında veriler şifrelenir (HTTPS/TLS). Veritabanında satır düzeyi güvenlik
+  (Row Level Security) uygulanır; teknik olarak her kullanıcı yalnızca kendi kayıtlarına
+  erişebilir.
+</p>
 
-  <div class="section">
-    <h2>Üçüncü Taraf Hizmetler</h2>
-    <p>Uygulamalar herhangi bir üçüncü taraf analitik, reklam veya izleme servisi kullanmaz.</p>
-    <p>Google Play Store üzerinden indirilen uygulamalar için Google'ın kendi gizlilik politikası geçerlidir.</p>
-  </div>
+<h2>Bildirimler</h2>
+<p>
+  İstersen günlük hatırlatma bildirimi açabilirsin. Bu bildirimler tamamen telefonunda
+  oluşturulur, sunucuya herhangi bir veri gönderilmez. Ayarlar bölümünden istediğin an
+  kapatabilirsin.
+</p>
 
-  <div class="section">
-    <h2>Çocukların Gizliliği</h2>
-    <p>Uygulamalarımız 13 yaş altı çocukları da kapsayan geniş bir kitleye yöneliktir. 13 yaş altından hiçbir kişisel veri toplanmaz. Uygulamalar kişisel veri toplamadığından ebeveyn onayı gerekmez.</p>
-  </div>
+<h2>Verilerini silme</h2>
+<p>Verilerini iki şekilde silebilirsin:</p>
+<ul>
+  <li>
+    <strong>Yalnızca bu cihazdaki veriler:</strong>
+    Uygulama içinde <em>Ayarlar → Tüm Verileri Sıfırla</em>.
+  </li>
+  <li>
+    <strong>Hesap ve buluttaki her şey:</strong>
+    Uygulama içinde <em>Yedek → Hesabımı Kalıcı Olarak Sil</em>.
+    Hesabın, profilin, ilerlemen ve tüm kart kayıtların sunucudan kalıcı olarak silinir.
+    İşlem geri alınamaz.
+  </li>
+</ul>
+<div class="kutu">
+  <strong>Uygulamaya erişimin yoksa</strong>
+  Telefonunu kaybettiysen veya uygulamayı sildiysen, hesabınla ilişkili e-posta
+  adresinden bize yazarak silme talebinde bulunabilirsin. Talepler en geç
+  <strong>30 gün</strong> içinde işleme alınır.
+</div>
 
-  <div class="section">
-    <h2>Bildirimler</h2>
-    <p>Kullanıcı talep ettiğinde günlük çalışma hatırlatıcısı gönderilir. Bildirimler tamamen isteğe bağlıdır ve uygulama ayarlarından kapatılabilir.</p>
-  </div>
+<h2>Saklama süresi</h2>
+<p>
+  Yedeklenen veriler, sen silene kadar saklanır. Hesabını sildiğinde veriler derhal ve
+  kalıcı olarak kaldırılır; yedeklerden temizlenmesi en geç 30 günü bulabilir.
+</p>
 
-  <div class="section">
-    <h2>Değişiklikler</h2>
-    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Değişiklikler bu sayfada yayımlanacaktır. Uygulamayı kullanmaya devam etmeniz güncel politikayı kabul ettiğiniz anlamına gelir.</p>
-  </div>
+<h2>Çocukların gizliliği</h2>
+<p>
+  Uygulama ortaokul öğrencilerine yöneliktir. Bu nedenle veri toplama bilinçli olarak en
+  aza indirilmiştir: hesap açmak zorunlu değildir, reklam yoktur, izleme yapılmaz ve
+  e-posta dışında kişisel bilgi istenmez. 13 yaşın altındaki bir kullanıcının hesap
+  açtığını düşünen ebeveyn veya vasi, aşağıdaki adresten bize ulaşarak hesabın silinmesini
+  isteyebilir.
+</p>
 
-  <!-- English Version -->
-  <div class="section">
-    <h2>Privacy Policy (English)</h2>
-    <div class="highlight">
-      These apps do not collect any personal data. All data is stored locally on your device only.
-    </div>
-    <p>LGS Cards and YKS Cards ("apps") are developed by Enese Gurmmenes. These apps work entirely offline and do not send any data to external servers.</p>
-    <p><strong>Data stored locally on your device:</strong></p>
-    <ul>
-      <li>Study progress (learned cards, SRS levels)</li>
-      <li>Daily streak and XP points</li>
-      <li>User preferences (target subject, study duration)</li>
-      <li>Notification preferences</li>
-    </ul>
-    <p>No third-party analytics, advertising, or tracking services are used. No personal data is collected from children under 13. Notifications are optional and can be disabled at any time.</p>
-  </div>
+<h2>Haklarınız</h2>
+<p>
+  KVKK ve GDPR kapsamında; verilerine erişme, düzeltilmesini isteme, silinmesini talep
+  etme ve verilerinin bir kopyasını isteme hakkına sahipsin. Bu talepler için aşağıdaki
+  e-posta adresinden bize yazabilirsin.
+</p>
 
-  <div class="contact">
-    <h2>İletişim / Contact</h2>
-    <p>Sorularınız için / For questions:</p>
-    <p style="margin-top:10px;"><a href="mailto:info@lgscards.app">info@lgscards.app</a></p>
-    <p style="margin-top:6px; font-size:13px; opacity:0.8;">Enese Gurmmenes · İzmir, Türkiye</p>
-  </div>
+<h2>Değişiklikler</h2>
+<p>
+  Bu politika güncellenirse, sayfanın en üstündeki "son güncelleme" tarihi değişir. Önemli
+  değişikliklerde uygulama içinde bilgilendirme yapılır.
+</p>
 
-  <div class="footer">
-    © 2026 Enese Gurmmenes · LGS Cards & YKS Cards<br>
-    <a href="mailto:info@lgscards.app" style="color:#4B7BE8;">info@lgscards.app</a>
-  </div>
+<h2>İletişim</h2>
+<div class="kutu">
+  <strong>Sorular ve veri silme talepleri</strong>
+  <a href="enes3rkan@icloud.com">BURAYA_EPOSTANI_YAZ</a>
+</div>
+
+<footer>
+  LGS Cepte · Geliştirici: enoflixjk<br>
+  Bu politika hem LGS Cepte uygulaması hem de resmi mağaza sayfası için geçerlidir.
+</footer>
 
 </div>
 </body>
